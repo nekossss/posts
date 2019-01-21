@@ -51,3 +51,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'dotenv-rails' #環境変数を簡単に利用できるgem

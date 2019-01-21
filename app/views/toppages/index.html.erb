@@ -1,0 +1,13 @@
+<!--<div class="center jumbotron">-->
+<!--  <div class="text-center">-->
+<!--    <h1>Welcome to the posts</h1>-->
+<!--    <%= link_to 'Twitterでログイン', '/auth/twitter' %> -->
+<!--  </div>-->
+<!--</div>-->
+
+
+<% if session[:user_id]==nil %>
+  <%= link_to "Twitterログイン", "/auth/twitter"%>
+<% else %>
+  <%= link_to "Twitterログアウト", "/auth/logout"%>
+<% end %>
